@@ -1,22 +1,33 @@
 body {
-    background-color: #061e5a;
+    background-color: #ffffff;
   }
   
   h1 {
-    color: #5fcdcd;
+    color: #043d3d;
     text-align: center;
   }
   
   h2 {
-    color: #0a9797;
+    color: #175b5b;
+    text-align: center;
   }
+  h3{
+    color:  #275368;
+    text-align: center;
+  }
+
   
   div {
     text-align: center;
   }
+  .projects{
+    border:#173737;
+    border-style:double;
+    background:#bee0e0
+  }
   
   .section {
-    color: #206e6e;
+    color: #2d5757;
   }
   
   #programmingLanguages {
