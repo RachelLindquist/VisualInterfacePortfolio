@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project 1</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body> 
+    <h1> Project 2</h1>
+    <h2> Rachel Lindquist </h2>
+    <p> <a href = "../index.html">Back to site</a></p>
+    <h2> Documentation:</h2>
+    <h3>Data</h3>
+    <p>The complete dataset for Cincinnati 311 (non-emergency) service requests can be found  
+        <a href = "https://data.cincinnati-oh.gov/Thriving-Neighborhoods/Cincinnati-311-Non-Emergency-Service-Requests/4cjh-bm8b">here</a>
+        This visualization only uses data from the first 6 months in 2022 due to the size of the data set.</p>
+    <h3>Visualization Components</h3>
+    <p>
+        The main view displays a map showing the locations of 311 calls, a bar chart showing the number of 311 calls 
+        made each day of the week, a bar chart showing the number of 311 calls with different service codes, 
+        a bar chart showing the number of 311 calls by ZIP code, a line chart showing the timeline of when 311 
+        calls were placed throughout 2022, and a scatterplot showing the amount of time between when the request 
+        is received and when it is updated. 
+    </p>
+
+    <p>
+        This visualization is interactive because users can hover over different bars in the bar charts and 
+        points on the map, line chart, and scatterplot to learn more information. They can click on a bar to 
+        filter the data, and the charts will update to represent only the selected data. They can also activate
+        different views of the map and scatterplot by clicking the buttons directly under the map. 
+    </p>
+
+    <p>
+        The first row of buttons allows the user to toggle between different map backgrounds,
+        which are satellite, topography, and street views. The second row of buttons allows the 
+        user to color the data points on the map and scatterplot by different attributes, such as call 
+        type, process time, call date, and public agency. The points on the map and scatterplot are colored
+        by call type by default, and there are color legends underneath the map and the scatterplot that show 
+        the different colors and change if the user chooses to color by another attribute.
+    </p>
+
+    <h3> Sketches</h3>
+    <p><img src="../sketch.jpg" alt="Original sketch idea" style="width:200px;height:300px;"> </p>
+    <p>
+        For all data points, due to the large amount of different data, we used color scales. 
+        Because of this, we did not group the data, but did include a legend explaining color meanings.
+    </p>
+
+    <h3> Discoveries</h3>
+    <p>Our site allows users to learn more about 311, non-emergency calls placed in Cincinnati. 
+        This includes information about the calls themselves but also how the calls are handled.
+        One interesting finding is about when calls are placed. These are non-emergency calls, 
+        but the call center is presumably always open, so it is interesting to see the sharp contrast 
+        between the number of calls placed during the week vs the weekend. This shows that people are 
+        hesitant to call about non-emergencies when it is not during the typical work week. We expect 
+        there would be a similar spike between 9am-5pm if we had a visualization for the time calls were placed.
+    </p>  
+    <p><img src="../weekBar.jpg" alt="Barchart showcasing calls by day of the week, Saturday and Sunday have significantly less calls"></p>     
+    <p>
+        Another thing we found is that there are a couple spots, in late January and early April, 
+        where process time spikes dramatically for a large number of the calls. 
+        This would indicate that the center handling the requests is understaffed or 
+        experiencing some other difficulty during this time and could be used to help make 
+        better schedules in the future so that requests don't have to wait 20+ days to be completed. 
+    </p>
+    <p><img src="../scatter.jpg" alt="Scatterplot showcasing request date and process time, process time jumps dramatically in late January and early April for large amounts of calls" style="width:75%"></p>
+    <h3>Process</h3>
+    <h4>Libraries:</h4>
+    <p><a href = "https://d3js.org/">D3</a></p>
+    <p><a href = "https://leafletjs.com/">Leaflet</a></p>
+    <p><a href = "https://observablehq.com/@d3/color-legend">D3 Color-Legend</a></p>
+    <h4>Code:</h4>
+    <p><a href = "https://github.com/RachelLindquist/DataVisProject2">Link to code</a></p>
+    <p><a href = "https://rachellindquist.github.io/DataVisProject2/">Link to site</a></p>
+    <p>The libraries used in our code are D3, Leaflet and D3 Color-Legend, all linked above.
+        We structured our code so that styling was mostly done in CSS and D3 with some small 
+        changes in index. For the Javascript code, most of our visualization specific code was done in classes, 
+        such as scatterplot.js, while site wide coding was done in main.js, such as filtering and cleaning of data.
+        Our code can be accessed by clicking on the link above. It can be run by downloading and running 
+        a live server on your machine or by running it through github on the site linked above.
+    </p>
+    <h3>Demo</h3>
+    <video width="320" height="240" controls>
+        <source src="../demo_video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video> 
+    <p>If the demo video does not load, please try running on firefox as that's what I've used to test this webpage.</p>
+
+    <h3>Individual Contributions</h3>
+    <ul>
+        <li>Nishi: Worked on the timeline, duplicated the legend under the scatterplot and debugging as needed</li>
+        <li>Josh: Worked on the barcharts, scatterplots, filtering and debugging as needed</li>
+        <li>Rachel: Worked on the map, including color/background buttons and legend, filtering and debugging as needed</li>
+    </ul>
+
+
+
+</body>
+</html>
