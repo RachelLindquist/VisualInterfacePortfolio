@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Design Critique</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body> 
+    <h1>Design Critique of Every Noise at Once</h1>
+    <p><a href = "https://everynoise.com/engenremap.html">Every Noise at Once</a></p>
+
+    <h2>Purpose and Overview</h2>
+    <p>The site is scatter plot of different music genres, with the purpose being to showcase different genres
+        and make it easier for users to find new artists and genres. It includes ways to search for artists, search for genres and
+        listen to samples of music. The X-axis moves from atmospheric to bouncier music while the Y-axis moves from organic to synthetic
+        music. The colors are based off 3 rbg values, red is determined based on the energy level on a genre, green on the dynamic variation
+        and blue on how instramental the the genre is.
+    </p>
+    <h2>Data</h2>
+    <p>The data used with the site is from Spotify. This includes the genres and the artists associated with them. The music used
+        as examples is also pulled Spotify. Since the site is owned by Spotify, it is able to easily aquire the data and stay up 
+        to date on artists and genres.
+    </p>
+    <h2>Users</h2>
+    <p>The main users for this site are also Spotify users, however anyone with an interest in music can use the site. Since it 
+        helpfully groups artists by genres, it is easy for music fans to find similar artists to ones they're already familar with.
+    </p>
+    <h2>Discoveries</h2>
+    <p>
+        The discoveries for this site are all related to music. For example, someone might want to know what music is similar to
+        their favorite genre or information about their favorite artists. To find answers to questions like these, they can scroll
+        through the scatterplot or just search for artists and genres.
+        For example, one of my favorite artists right now is Versengold. If I were to search for them, I'd get a popup saying they're 
+        classifed as medieval rock. 
+    </p>    
+    <p><img src="../search.JPG" alt="Search bar showing Versengold" style="width:50%"></p>
+    <p>
+        From here, I can get more information, clicking the i symbol leads to page with information on Versengold. 
+    </p>
+    <p><img src="../verinfo.JPG" alt="Page showing information on Versengold" style="width:50%;"></p>
+    <p>
+        Or I can click on the hamburger menu to get a list of similar genres and a medieval rock playlist.
+    </p>
+    <p><img src="../list.JPG" alt="List of genres related to medieval rock, a spotify playlist full of medieval rock songs is on the right." style="width:75%"></p>
+    <h2>Effective Design Choices</h2>
+    <p>
+        <ul>
+            <li>Plays samples of music, making it easy to quickly determine if users like a genre or artist.</li>
+            <li>Linked with the dataset it pulls from and updates with it. As Spotify adds new music and genres so does Every Noise at Once.</li>
+            <li>Links out to many playlists, making it much easier for users to find new music.</li>
+        </ul>
+    </p>
+    <h2>Ineffective Design Choices</h2>
+        <ul>
+            <li>A legend needs to be added to help explain the x and y axis as well as colors</li>
+            <li>Relies heavily on Spotify's genres. This makes sense as it's linked with Spotify, but is confusing as Spotify tends to make up a lot of new genres.</li>
+            <li>Has problems with spacing when it comes to foreign characters.</li>
+            <p><img src="../spacing.JPG" alt="Scatterplot showing overlapping Japanese characters" style="width:15%"></p>
+            <li>Doesn't allow for selecting multiple genres, for example if I wanted to see how close artists from medieval rock are with neue deutsche harte I can't.</li>
+            <li>Allows to search for countries but only through genre names like "thai metal" and "finnish pop". I should be able to just look for songs from Finland and filter from there.</li>
+
+        </ul>
+
+
+
+</body>
+</html>
